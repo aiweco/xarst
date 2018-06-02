@@ -72,9 +72,17 @@
 
    <figure>
 
-<img src="img/2015_09_15_T_II-10_klein.jpg" alt="">
+    <img class="slides" src="img/carsten_tempelhof_01_WEB_640.jpg" alt="">
+    <img class="slides" src="img/carsten_tempelhof_02_WEB_640.jpg" alt="">
+    <img class="slides" src="img/carsten_tempelhof_03_WEB_640.jpg" alt="">
+    <img class="slides" src="img/carsten_tempelhof_04_WEB_640.jpg" alt="">
+    <img class="slides" src="img/carsten_tempelhof_05_WEB_640.jpg" alt="">
+    <img class="slides" src="img/carsten_tempelhof_06_WEB_640.jpg" alt="">
 
    </figure>  
+
+   <button class="button button-left" onclick="plusDivs(-1)">&#x3E;</button>
+<button class="button button-right" onclick="plusDivs(+1)">&#x3C;</button>
 
    <div class="text">
    <p>Tempelhof</p>
@@ -83,6 +91,28 @@
 
 </div> <!-- grid end -->
  </div> <!-- container end -->
+
+ <script type="text/javascript">
+        
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+        
+</script>
     
 </body>
 </html>
