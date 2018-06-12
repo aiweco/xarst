@@ -118,9 +118,10 @@ img{
         -ms-grid-column: 2/2;
         grid-row: 1/2;
         -ms-grid-row: 1/2; 
-        height: 29rem;
+        height: 40.5rem;
         width: 100%;
         overflow: hidden;
+        /* border: 1px solid red; */
     } 
     img{
         top: 0;
