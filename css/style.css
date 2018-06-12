@@ -76,8 +76,16 @@ img{
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-top: 1rem;
 }
 
+.photo-container{
+    display: table;
+  }
+
+.photo-container-slides{
+  display: none;
+}
 
 .button{
     background-color: white; 
@@ -92,8 +100,8 @@ img{
     width: 1rem;
     outline: 0;
     margin-top: -0.1rem;
+    display: none;
 }
-
 
 
 @media only screen and (min-width: 868px) { 
@@ -112,24 +120,12 @@ img{
         margin-top: 1.5rem;
     }
 
-    .photos-container{
-        margin-top: 2rem;
+.photos-container{
         grid-column: 2/2;
         -ms-grid-column: 2/2;
         grid-row: 1/2;
         -ms-grid-row: 1/2; 
-        height: 29rem;
-        width: 100%;
-        overflow: hidden;
-    } 
-    img{
-        top: 0;
-    }
-    .slides-navi{
-        grid-column: 2/2;
-        -ms-grid-column: 2/2;
-        grid-row: 2/2;
-        -ms-grid-row: 2/2;
-    }
 
 }
+  
+ } 
